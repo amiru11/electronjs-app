@@ -4,4 +4,10 @@ import ReactDOM from 'react-dom';
 import Root from './client/Root';
 import './index.scss';
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+const ROOT_ID = 'root';
+
+const rootElement = document.createElement('div');
+rootElement.id = ROOT_ID;
+document.body.appendChild(rootElement);
+
+ReactDOM.render(<Root />, rootElement);

@@ -4,7 +4,7 @@
   "main": "./dist/main.js",
   "scripts": {
     "build": "tsc",
-    "dev": "yarn start-renderer && yarn start-electron",
+    "dev": "yarn start-renderer & yarn start-electron",
     "start-electron": "cross-env NODE_ENV=development webpack --config ./config/webpack.config.js --mode development && electron .",
     "start-renderer": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.config.renderer.js"
   },
@@ -33,6 +33,7 @@
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
+    "dotenv": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"
